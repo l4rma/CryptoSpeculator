@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_label">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="style_edit">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:id="@+id/header">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_dollar"/>
+
+    <TextView
+        android:id="@+id/currency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BitCoin"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/image"/>
+
+    <TextView
+        android:id="@+id/currency_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTC"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_toEndOf="@+id/image"
+        android:layout_below="@+id/currency_name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currency_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:text="$63,426.31"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/currency_price"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/buy_sell_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Currency"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/buy_sell_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can only buy cryptocurrency with USD"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/buy_sell_symbol"
+                android:layout_height="wrap_content"
+                android:text="USD"
+                style="@style/text_label"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/buy_sell_edit"
+                style="@style/style_edit"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:hint="0"
+                android:textSize="28sp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/value_symbol"
+                style="@style/text_label"
+                android:layout_height="match_parent"
+                android:text="BTC" />
+            <TextView
+                android:id="@+id/buy_sell_value"
+                style="@style/style_edit"
+                android:inputType="numberDecimal"
+                android:hint="0"
+                android:textColorHint="@color/gray"
+                android:textSize="28sp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btnConfirm"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textSize="24sp"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
